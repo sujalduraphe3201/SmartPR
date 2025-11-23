@@ -20,6 +20,8 @@ It fetches PR diffs, analyzes the code using a Large Language Model (LLM), and c
 ##  How It Works
 
 ```text
-Developer pushes code → GitHub PR → Webhook → SmartPR Server
-         ↓
-    Fetch PR diff → Send to AI → AI review → Comment on PR
+Developer → Push Code → PR Created
+      ↓
+GitHub Webhook → SmartPR Server
+      ↓
+Fetch Diff → AI Analysis → Post Comment
